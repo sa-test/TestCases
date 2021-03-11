@@ -1,7 +1,0 @@
-C:\Users\User\source\repos\ConsoleSQLTest\ConsoleSQLTest\bin\Debug\ConsoleSQLTest.exe.config
-C:\Users\User\source\repos\ConsoleSQLTest\ConsoleSQLTest\bin\Debug\ConsoleSQLTest.exe
-C:\Users\User\source\repos\ConsoleSQLTest\ConsoleSQLTest\bin\Debug\ConsoleSQLTest.pdb
-C:\Users\User\source\repos\ConsoleSQLTest\ConsoleSQLTest\obj\Debug\ConsoleSQLTest.csprojAssemblyReference.cache
-C:\Users\User\source\repos\ConsoleSQLTest\ConsoleSQLTest\obj\Debug\ConsoleSQLTest.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\ConsoleSQLTest\ConsoleSQLTest\obj\Debug\ConsoleSQLTest.exe
-C:\Users\User\source\repos\ConsoleSQLTest\ConsoleSQLTest\obj\Debug\ConsoleSQLTest.pdb
