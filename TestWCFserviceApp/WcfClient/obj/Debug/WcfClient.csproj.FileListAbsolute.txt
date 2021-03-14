@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\bin\Debug\WcfClient.exe.config
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\bin\Debug\WcfClient.exe
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\bin\Debug\WcfClient.pdb
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\obj\Debug\WcfClient.csprojAssemblyReference.cache
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\obj\Debug\WcfClient.Form1.resources
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\obj\Debug\WcfClient.Properties.Resources.resources
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\obj\Debug\WcfClient.csproj.GenerateResource.cache
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\obj\Debug\WcfClient.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\obj\Debug\WcfClient.exe
+C:\Users\User\source\repos\TestWCFserviceApp\WcfClient\obj\Debug\WcfClient.pdb
