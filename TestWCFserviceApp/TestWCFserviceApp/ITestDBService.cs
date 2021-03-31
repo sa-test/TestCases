@@ -16,15 +16,21 @@ namespace TestWCFserviceApp
     {
 
         [OperationContract]
+        [WebInvoke(Method = "POST",
+      UriTemplate = "/AddUser/{name}/{descr}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         int AddUser(string name, string descr);
 
         [OperationContract]
         int DeleteUser(int id);
 
+        [WebInvoke(Method = "PUT",
+      UriTemplate = "/UpdateUser/{name}/{descr}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         [OperationContract]
         int UpdateUser(int id, string name, string descr);
 
         [OperationContract]
+        [WebInvoke(Method = "GET",
+      UriTemplate = "/GetData", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         List<User> GetData();
 
 
