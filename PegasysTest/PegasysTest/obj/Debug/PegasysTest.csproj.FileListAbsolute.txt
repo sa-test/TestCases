@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\PegasysTest\PegasysTest\bin\Debug\PegasysTest.exe.config
+C:\Users\User\source\repos\PegasysTest\PegasysTest\bin\Debug\PegasysTest.exe
+C:\Users\User\source\repos\PegasysTest\PegasysTest\bin\Debug\PegasysTest.pdb
+C:\Users\User\source\repos\PegasysTest\PegasysTest\obj\Debug\PegasysTest.csprojAssemblyReference.cache
+C:\Users\User\source\repos\PegasysTest\PegasysTest\obj\Debug\PegasysTest.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\PegasysTest\PegasysTest\obj\Debug\PegasysTest.exe
+C:\Users\User\source\repos\PegasysTest\PegasysTest\obj\Debug\PegasysTest.pdb
