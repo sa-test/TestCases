@@ -13,5 +13,5 @@
 ## 3-TestWCFserviceApp
 WCF сервис использующий EF и WinForm клиент к нему
 
-##4-vue-vlient-for-wcf
+## 4-vue-vlient-for-wcf
 VUE.JS клиент к WCF сервису из предыдущего примера.
