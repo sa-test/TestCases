@@ -62,6 +62,32 @@ namespace TestWCFserviceApp
             }
         }
 
+        public int DeleteUserWeb(string id)
+        {
+            using (TestDB1Entities db = new TestDB1Entities())
+            {
+                try
+                {
+                    db.EFUsers.Load();
+                    EFUser userDel = db.EFUsers.Find(Convert.ToInt32(id));
+                    if (userDel != null)
+                    {
+                        db.EFUsers.Remove(userDel);
+                        db.SaveChanges();
+                        return 1;
+
+                    }
+                    else { return 0; }
+
+                }
+                catch (Exception ex)
+                {
+                    return 0;
+                }
+            }
+        }
+
+
         public int UpdateUser(int id, string name, string descr)
         {
             using (TestDB1Entities db = new TestDB1Entities())
@@ -70,6 +96,42 @@ namespace TestWCFserviceApp
                 {
                     db.EFUsers.Load();
                     EFUser userUpd = db.EFUsers.Find(id);
+                    if (userUpd != null)
+                    {
+                        if (String.IsNullOrEmpty(name))
+                        {
+                            name = "";
+                        }
+
+                        if (String.IsNullOrEmpty(descr))
+                        {
+                            descr = "";
+                        }
+
+                        userUpd.Name = name;
+                        userUpd.Description = descr;
+                        db.SaveChanges();
+                        return 1;
+
+                    }
+                    else { return 0; }
+
+                }
+                catch (Exception ex)
+                {
+                    return 0;
+                }
+            }
+        }
+
+        public int UpdateUserWeb(string id, string name, string descr)
+        {
+            using (TestDB1Entities db = new TestDB1Entities())
+            {
+                try
+                {
+                    db.EFUsers.Load();
+                    EFUser userUpd = db.EFUsers.Find(Convert.ToInt32(id));
                     if (userUpd != null)
                     {
                         if (String.IsNullOrEmpty(name))
@@ -126,6 +188,36 @@ namespace TestWCFserviceApp
 
             }
             
+        }
+
+        public User[] GetDataArray()
+        {
+            using (TestDB1Entities db = new TestDB1Entities())
+            {
+                try
+                {
+                    db.EFUsers.Load();
+                    List<User> usersDTO = new List<User>();
+
+                    foreach (EFUser efuser in db.EFUsers)
+                    {
+                        User user = new User();
+                        user.id = efuser.id;
+                        user.Name = efuser.Name;
+                        user.Description = efuser.Description;
+                        usersDTO.Add(user);
+                    }
+
+                    return usersDTO.ToArray();
+
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+
+            }
+
         }
 
         /*

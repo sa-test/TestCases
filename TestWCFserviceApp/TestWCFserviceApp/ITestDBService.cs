@@ -23,15 +23,37 @@ namespace TestWCFserviceApp
         [OperationContract]
         int DeleteUser(int id);
 
-        [WebInvoke(Method = "PUT",
-      UriTemplate = "/UpdateUser/{name}/{descr}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         [OperationContract]
+        [WebInvoke(Method = "GET",
+UriTemplate = "/DelUser/{id}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        int DeleteUserWeb(string id);
+
+
+ 
+        [OperationContract]
+        [WebInvoke(Method = "PUT",
+UriTemplate = "/UpdateUser/{name}/{descr}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         int UpdateUser(int id, string name, string descr);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+UriTemplate = "/UpdateUserWeb/{id}/{name}/{descr}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+
+        int UpdateUserWeb(string id, string name, string descr);
+
 
         [OperationContract]
         [WebInvoke(Method = "GET",
       UriTemplate = "/GetData", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         List<User> GetData();
+
+        //GetDataArray is not work as I want. It still return the object, not array. But I found the way how to 
+        //work with object inside frontend vue application
+        // so this Contract can be deleted.
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+UriTemplate = "/GetDataArray", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        User[] GetDataArray();
 
 
         // TODO: Add your service operations here
@@ -40,7 +62,7 @@ namespace TestWCFserviceApp
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
 
-    
+
 
     [DataContract]
     public class User
