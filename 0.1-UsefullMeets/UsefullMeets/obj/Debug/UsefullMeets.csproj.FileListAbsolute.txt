@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\UsefullMeets\UsefullMeets\bin\Debug\UsefullMeets.exe.config
+C:\Users\User\source\repos\UsefullMeets\UsefullMeets\bin\Debug\UsefullMeets.exe
+C:\Users\User\source\repos\UsefullMeets\UsefullMeets\bin\Debug\UsefullMeets.pdb
+C:\Users\User\source\repos\UsefullMeets\UsefullMeets\obj\Debug\UsefullMeets.csprojAssemblyReference.cache
+C:\Users\User\source\repos\UsefullMeets\UsefullMeets\obj\Debug\UsefullMeets.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\UsefullMeets\UsefullMeets\obj\Debug\UsefullMeets.exe
+C:\Users\User\source\repos\UsefullMeets\UsefullMeets\obj\Debug\UsefullMeets.pdb

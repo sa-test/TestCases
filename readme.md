@@ -3,6 +3,8 @@
 #### 0-PegasysTest 
 Отдельная тестовая задачка
 
+#### 0.1-UsefullMeets
+Тестовая задачка с Ulearn
 
 #### 1-SQLtestWinForm1 
 пример работы с БД через ADO
