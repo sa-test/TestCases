@@ -17,3 +17,6 @@ WCF сервис использующий EF и WinForm клиент к нему
 
 #### 4-vue-vlient-for-wcf
 VUE.JS клиент к WCF сервису из предыдущего примера.
+
+#### 5-xo-test-googlesheetsapi
+Тест для Data Analyst (использование Python и Google sheets API)
